@@ -1,3 +1,13 @@
+iframe{
+    width: 70%;
+    height: 300px;
+}
+
+.mapcenter{
+  padding-top: 5em;
+  text-align: center;
+
+}
 .bg {
   position: relative;
   width: 100%;
