@@ -8,6 +8,9 @@
 @import "../css/menu.css";
 
 @import "../css/font-awesome.css";*/
+@media only screen and (max-width: 479px){
+
+}
 
 input {
 	outline:  none !important;
@@ -32,7 +35,6 @@ text-decoration:none;
 body {
 	font: 14px/20px  Arial, Helvetica, sans-serif;
 	color:#5f5e4e;
-	/*background-color: #BCDB98;*/
 	position:relative;
 	min-width:960px;
 }
@@ -53,7 +55,7 @@ body {
 h1, h2, h3, h4, h5, h6 {
 	font-weight: normal;
 	font-family: 'Open Sans', sans-serif ;
-	color: #009fb3;
+	color: #333;
 
 }
 
@@ -217,19 +219,18 @@ header {
 	display: block;
 	position: relative;
 	z-index: 999;
-	padding: 29px 0 21px;
 }
 
 
-h1 {
+/*h1 {
 	float: none;
 	z-index: 999;
-	font-size: 0;
+	font-size: 20px;
 	text-align: center;
 	line-height: 0;
 	margin-bottom: 58px;
 
-}
+}*/
 h1 a {
 	display: inline-block;
 	overflow: hidden;
@@ -301,28 +302,53 @@ h1 a img {
 
 
 .content {
-	background-color: #fff;
+	/*background-color: #fff;*/
 	padding-bottom: 113px;
+	text-align: center;
+	top:100px;
+	z-index: 2;
 }
+
+.content h1{
+	font-family: Comic Sans MS, cursive, sans-serif;
+  text-align: center;
+	font-size: 85px;
+	text-transform: uppercase;
+	font-weight: 300;
+	color:#fff;
+	padding-top: 12%;
+	margin-bottom: 10px;
+}
+
+.content p{
+	font-family: cursive, sans-serif;
+  text-align: center;
+	font-size: 35px;
+	letter-spacing:3px;
+	padding-top: 5%;
+	color:#ccc;
+}
+
 
 .page1 .content {
 	padding-top: 4px;
 	padding-bottom: 105px;
+	top:100px;
 
 }
 
 .block1 {
-	margin-bottom: 25px;
+	margin-bottom: 5px;
 	position: relative;
 	text-align: center;
 	overflow: hidden;
 	display: block;
 	width:100%;
 }
-
+/*
 .block1 img{
-	width:60%;
-}
+	width:100%;
+}*/
 
 .block1 .price {
 	-moz-box-sizing: border-box;
