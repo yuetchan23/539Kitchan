@@ -51,7 +51,7 @@ body {
 	font-size:10px;
 	margin:-220% 0 0 0;
 	overflow:hidden;
-	padding:0
+	padding:0;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -87,8 +87,8 @@ h2,h3{
 
 .page2 h3 {
 	text-align: center;
-	padding-top: 98px;
-	margin-bottom: 120px;
+	padding: 20px;
+	margin-bottom: 80px;
 }
 
 h3.head1 {
@@ -97,11 +97,6 @@ h3.head1 {
 	margin-bottom: 136px;
 }
 
-h3.head2 {
-	text-align: center;
-	padding-top: 96px;
-	margin-bottom: 47px;
-}
 
 h3.head3 {
 	font-size: 36px;
@@ -530,13 +525,18 @@ a.col1:hover, .col1>a:hover {
 }
 
 .nav li {
-	margin: 0 11px;
+	margin: 0 15px;
 	display: inline-block;
 	font: 18px/20px 'Open Sans', sans-serif;
 }
 
 .nav li.selected {
-	color: #d9c381;
+	color: #fff;
+	padding: 20px;
+	margin-top:20px;
+	margin-bottom: 25px;
+	background-color:black;
+	opacity:0.7;
 }
 
 .col2 {
@@ -824,6 +824,15 @@ footer a:hover {
 	opacity:0.5;
 	filter:alpha(opacity=60);
 
+}
+
+.detail_foot{
+	text-align: center;
+	font-family: Comic Sans MS, cursive, sans-serif;
+	font-size: 16px;
+	line-height: 20px;
+	margin-bottom: 15px;
+	color: #666633;
 }
 
 #toTop {
