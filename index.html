@@ -28,14 +28,20 @@
     </div>
   </div>
 
-  <div class="bg">
+  <!-- <div class="bg">
     <div class="overlay"> <div id="diamond-shield"></div> </div>
+  </div> -->
+  <div class="background-wrap">
+      <video id="video-bg-elem" preload="auto" autoplay="true" loop="loop" muted="muted">
+        <source src="imgs/bg.mp4" type="video/mp4">
+          NOT SUPPORT
+      </video>
   </div>
 
   <div class="intro">
         <!-- <div class="header-center">
           <img id="header-center" src="imgs/header-center.png" alt=""> -->
-          <h1> <a href="index.html"><img id="home-logo" src="imgs/kc_logo.png" alt="Kitchan"></a> </h1>
+          <!-- <h1> <a href="index.html"><img id="home-logo" src="imgs/kc_logo.png" alt="Kitchan"></a> </h1> -->
         <!-- </div> -->
         <div class="menu_block">
           <nav id="bt-menu" class="bt-menu">
@@ -151,7 +157,7 @@
       })
 </script>
 
-<!-- <script>
+<script>
    $(document).ready(function(){
      $( ".block1" ).mouseover(function() {
        $(this).addClass( "blur" );
@@ -161,7 +167,7 @@
      });
      $().UItoTop({ easingType: 'easeOutQuart' });
    })
-</script> -->
+</script>
 
 </body>
 </html>
