@@ -4,6 +4,8 @@
 	position: relative;
 	overflow: hidden;
 	padding-left: 67px;
+	z-index: 100;
+	top: 100px;
 }
 
 nav.bt-menu  ul li {
