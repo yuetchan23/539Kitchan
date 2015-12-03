@@ -35,6 +35,7 @@ text-decoration:none;
 body {
 	font: 14px/20px  Arial, Helvetica, sans-serif;
 	color:#5f5e4e;
+	background-color: #d7d7b1;
 	position:relative;
 	min-width:960px;
 }
