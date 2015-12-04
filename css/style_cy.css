@@ -136,10 +136,10 @@
   padding-top: 50px;
 }
 #table img{
-  padding-top:3%;
-  padding-bottom:5%;
+  padding-top:20px;
+  padding-bottom:100px;
   box-sizing: border-box;
-  height:76%;
+  height:100%;
 }
 
 #color_filter{
@@ -147,18 +147,9 @@
   text-align: center;
 }
 
-#color_filter li{
+.nav li{
   display:inline-block;
-  position:relative;
-  top:-50px;
-  transition: 0.5s ease;
-	-o-transition: 0.5s ease;
-	-webkit-transition: 0.5s ease;
 }
-#color_filter li.selected {
-	top:0px;
-}
-
 .ornament{
   height:10em;
 }
