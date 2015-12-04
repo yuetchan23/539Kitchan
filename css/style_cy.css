@@ -1,7 +1,7 @@
 .bg {
   position: relative;
-  width: 100%;
-  height: 100%;
+  width: 100% !important;
+  height: 100% !important;
   z-index: -1;
   top: 0;
   left: 0;
@@ -10,14 +10,18 @@
   -o-transition: all 500ms fade;
   -ms-transition: all 500ms fade;
   transition: all 500ms fade;
-  background-image:url(../imgs/front_page3.jpg);
+  background-image:url(../imgs/header.jpg);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size:100% auto;
   position: absolute;
-  width: 100%;
-  height: 750px;
+
 }
 
+#logo{
+  position:absolute;
+  top:-20px;
+  margin-left: 25%;
+}
 
 .blur-bg {
   opacity: 0;
@@ -112,7 +116,7 @@
 
 .content{
   position:relative;
-  top:350px;
+  /*top:350px;*/
 }
 .intro{
   align-items: center;
@@ -123,4 +127,41 @@
   text-align:center;
   font-size: 250%;
   margin:50px 0px 50px 0px;
+}
+/*-----------"MAKE YOUR OWN" PAGE------------------*/
+
+#table{
+  height:600px;
+  text-align: center;
+  padding-top: 50px;
+}
+#table img{
+  padding-top:20px;
+  padding-bottom:100px;
+  box-sizing: border-box;
+  height:100%;
+}
+
+#color_filter{
+  height:200px;
+  text-align: center;
+}
+
+.nav li{
+  display:inline-block;
+}
+.ornament{
+  height:10em;
+}
+
+#ingredient_select{
+  height:300px;
+  border: 2px dashed #EEEEEE;
+  overflow: scroll;
+  text-align: center;
+}
+
+.ingredient{
+  height:30%;
+  padding:0.5em;
 }

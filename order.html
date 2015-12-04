@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <title>Home</title>
+     <meta charset="utf-8">
+     <link rel="icon" href="images/favicon.ico">
+
+     <link rel="stylesheet" href="css/reset.css">
+     <link rel="stylesheet" href="css/grid.css">
+     <link rel="stylesheet" href="css/style.css">
+     <link rel="stylesheet" href="css/style_cy.css">
+     <link rel="stylesheet" href="css/menu.css">
+     <link rel="stylesheet" href="css/font-awesome.css">
+
+     <script src="js/jquery.js"></script>
+     <script src="js/jquery-migrate-1.1.1.js"></script>
+     <script src="js/jquery.easing.1.3.js"></script>
+</head>
+
+<body class="page1">
+
+<header>
+  <div class="container_12">
+    <div class="grid_12">
+
+    </div>
+  </div>
+
+  <div class="bg">
+
+  </div>
+
+  <div class="intro">
+        <!-- <div class="header-center">
+          <img id="header-center" src="imgs/header-center.png" alt=""> -->
+          <h1> <a href="index.html"><img id="home-logo" src="imgs/kc_logo.png" alt="Kitchan"></a> </h1>
+        <!-- </div> -->
+        <div class="menu_block">
+          <nav id="bt-menu" class="bt-menu">
+              <a href="#" class="bt-menu-trigger"><span>Menu</span></a>
+              <ul>
+                <li class="current bt-icon "><a href="index.html">Home</a></li>
+               <li class="bt-icon"><a href="index-1.html">Order</a></li>
+               <li class="bt-icon"><a href="index-2.html">   </a></li>
+               <li class="bt-icon"><a href="index-3.html">   </a></li>
+               <li class="bt-icon"><a href="index-4.html">About</a></li>
+               <li class="bt-icon"><a href="index-5.html">Contacts</a></li>
+              </ul>
+          </nav>
+        </div>
+  </div>
+
+</header>
+
+<!--==============================Content=================================-->
+
+<div class="content">
+  <h2 class="SecTitle">Recommended Recipes of the Season</h2>
+
+  <a href="order.html" class="block1">
+    <img src="imgs/front_page1.png" alt="">
+    <span class="price"><span>Chan’s Recommended Combo 1</span><span><small>$29.35</small> </span><strong></strong></span>
+  </a>
+  <a href="order.html" class="block1">
+    <img src="imgs/front_page2.png" alt="">
+    <span class="price"><span>Chan’s Recommended Combo 2</span><span><small>$35.45</small> </span><strong></strong></span>
+  </a>
+  <a href="order.html" class="block1">
+    <img src="imgs/front_page3.png" alt="">
+    <span class="price"><span>Chan’s Recommended Combo 3</span><span><small>$50.10</small> </span><strong></strong></span>
+  </a>
+
+  <div class="container_12">
+    <div class="grid_12">
+      <h3 class="SecTitle">New in Menu</h3>
+    </div>
+    <div class="grid_3">
+      <div class="box maxheight">
+        <img src="images/box_img1.jpg" alt="">
+        <div class="title">Oatmeal Pumpkin Pie Bars</div>
+        “The best scenario would be to bring these oatmeal pumpkin pie bars to Thanksgiving along with a vegan pumpkin pie. This way, you can have your
+slice of pumpkin pie and then have one or two of these guys later on. No leftovers of pie? Don’t fret­ these are small enough that you could stick a few in your pocket and the family would be none the wiser.”­Kristy of Keepin’
+It Kind
+        <br>
+        <a href="#">More Info</a>
+      </div>
+    </div>
+    <div class="grid_3">
+      <div class="box maxheight">
+        <img src="images/box_img2.jpg" alt="">
+        <div class="title">Balsamic Roasted Brussels Sprouts</div>
+        “If you know someone who doesn’t like brussels sprouts, try this recipe and
+they’ll likely change their mind. Freshly shaved parmesan or toasted
+pistachios sprinkled on top are a nice touch for the ultimate in brussels
+sprouts.” ­ Averie of Averie Cooks
+        <br>
+        <a href="#">More Info</a>
+      </div>
+    </div>
+    <div class="grid_3">
+      <div class="box maxheight">
+        <img src="images/box_img3.jpg" alt="">
+        <div class="title">Ulum volutpat</div>
+        Hrtolieger convallis omi tem aore, at ornare loren coate. Pasellus era nisl auctor vel veliterolsed pharetra.
+        <br>
+        <a href="#">More Info</a>
+      </div>
+    </div>
+    <div class="grid_3">
+      <div class="box maxheight">
+        <img src="images/box_img4.jpg" alt="">
+        <div class="title">I’m­On­Cloud­9 Dreamy Vegan Mashed Potatoes</div>
+        “A far cry from the bland and dense mashed potatoes that frequent
+Thanksgiving tables, these crowd­pleasing mashed potatoes offer a cloud-
+like texture and a touch of smokiness woven throughout each bite. I’ve
+brought them to Thanksgiving gatherings over the last few years, and they’re
+always the first side dish to go. Move over, green bean casserole. The fact
+that they’re vegan and offer a micro­nutrient boost? That’ll be our little
+secret.”­ Ashley of Blissful Basil
+        <br>
+        <a href="#">More Info</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--==============================footer=================================-->
+
+<footer>
+
+  <div class="container_12">
+    <div class="grid_6 prefix_3">
+      <a href="index.html" class="f_logo"><img src="imgs/kc_logo.png" alt=""></a>
+      <div class="copy">
+        &copy; 2015 | <br> Website Designed by Y.Y.Y</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="socials">
+    <a href="#"></a>
+    <a href="#"></a>
+    <a href="#"></a>
+    <a href="#" class="last"></a>
+  </div>
+
+</footer>
+
+
+<script>
+      $(document).ready(function(){
+         $(".bt-menu-trigger").toggle(
+          function(){
+            $('.bt-menu').addClass('bt-menu-open');
+          },
+          function(){
+            $('.bt-menu').removeClass('bt-menu-open');
+          }
+        );
+      })
+</script>
+
+<!-- <script>
+   $(document).ready(function(){
+     $( ".block1" ).mouseover(function() {
+       $(this).addClass( "blur" );
+     });
+     $( ".block1" ).mouseout(function() {
+       $(this).removeClass( "blur" );
+     });
+     $().UItoTop({ easingType: 'easeOutQuart' });
+   })
+</script> -->
+
+</body>
+</html>

@@ -32,7 +32,7 @@ text-decoration:none;
 body {
 	font: 14px/20px  Arial, Helvetica, sans-serif;
 	color:#5f5e4e;
-	/*background-color: #BCDB98;*/
+	background-color: #BCDB98;
 	position:relative;
 	min-width:960px;
 }
