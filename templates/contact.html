@@ -1,0 +1,63 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<!--==============================Content=================================-->
+<div class="content contact">
+  <div class="col-lg-12">
+
+    <div class="container">
+        <div class="col-xs-12 col-sm-4">
+        <h3 class="head3">Address</h3>
+              <div class="map">
+
+
+                <address>
+                              <dl>
+                                  <dt>Kitchan <br>
+                                      540 Thompson Street,<br>
+                                      Ann Arbor, MI 48109.
+                                  </dt>
+                                  <dd><span>Phone:</span>+1 800 000 0000</dd>
+                                  <dd><span>FAX:</span>+1 800 000 0000</dd>
+                                  <dd>E-mail: <a href="#" class="col2">contact@kitchan</a></dd>
+                                  <dd>Skype: <a href="#" class="col2">@Kitchan</a></dd>                              </dl>
+                           </address>
+
+            </div>
+      </div>
+    <div class="col-xs-12 col-sm-8">
+        <h3 class="head3">
+          Contact Form
+        </h3>
+        <form id="form" action="{{ url_for('contact') }}" method=Post>
+                        <div class="success_wrapper">
+                        </div>
+                        <label class="name col-lg-4 col-md-4">
+                        {{ form.name(placeholder='Name', class_="name col-lg-4 col-md-4") }}
+                        </label>
+
+                        <label class="email col-lg-4 col-md-4">
+                        {{ form.email(placeholder='email', class_="email col-lg-4 col-md-4") }}
+                        </label>
+                        <label class="phone col-lg-4 col-md-4">
+                        {{ form.subject(placeholder='subject', class_="phone col-lg-4 col-md-4") }}
+                        </label>
+
+                        <label class="message">
+                        {{ form.message(placeholder='Message',class_="_placeholder"+form.message.name) }}
+                        </label>
+                        <div class="btns_wrapper btnsubmit col-xs-4">
+
+                            {{ form.submit(class_='btns') }}
+                        </div>
+                        </form>
+      </div>
+
+        <div class="col-lg-12 mapcenter">
+          <iframe src="https://www.google.com/maps/embed/v1/place?q=place_id:Eik1NDAgVGhvbXBzb24gU3QsIEFubiBBcmJvciwgTUkgNDgxMDQsIFVTQQ&amp;key=AIzaSyB7-pJcphj63qts2HrnzW8gwpxE0c7Hqw8" allowfullscreen=""></iframe>
+          </div>
+    </div>
+  </div>
+
+{% endblock %}

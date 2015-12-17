@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>{{title}}</title>
+  <meta charset = "UTF-8">
+  <meta charset="utf-8">
+  <link rel="icon" href="../static/imgs/favicon.ico">
+  <!-- Stylesheet -->
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../static/css/reset.css">
+  <link rel="stylesheet" href="../static/css/grid.css">
+  <link rel="stylesheet" href="../static/css/style.css">
+  <link rel="stylesheet" href="../static/css/style_cy.css">
+  <link rel="stylesheet" href="../static/css/menu.css">
+  <link rel="stylesheet" href="../static/css/font-awesome.css">
+  <link rel="stylesheet" href="../static/css/form.css">
+  <link rel="stylesheet" href="../static/css/style_DIYpage.css">
+  <link rel="stylesheet" href="../static/css/style_contact.css">
+  <!-- <link rel="stylesheet" href="css/style_DIYpage.css"> -->
+  <link rel="stylesheet" href="../static/css/touchTouch.css">
+
+  {% block stylesheet %}
+  {% endblock %}
+  <!-- Javascript -->
+  <script src="../static/js/jquery.js"></script>
+  <script src="../static/js/jquery-migrate-1.1.1.js"></script>
+  <script src="../static/js/jquery.equalheights.js"></script>
+  <script src="../static/js/jquery.ui.totop.js"></script>
+  <script src="../static/js/TMForm.js"></script>
+  <script src="../static/js/jquery.easing.1.3.js"></script>
+  <script src="../static/js/makeurown.js"></script>
+  <script src="../static/js/okzoom.js"></script>
+  {% block javascript %}
+  {% endblock %}
+
+</head>
+
+<body>
+<header>
+  <div id="header_img">
+    <img src="../static/imgs/header.jpg">
+  </div>
+  <div id="header_title">
+    <h1>KitChan Food</h1>
+  </div>
+  <div class="menu_block">
+    <nav id="bt-menu" class="bt-menu">
+        <a href="#" class="bt-menu-trigger"><span>Menu</span></a>
+        <ul>
+        <li {% if name == "home" %}
+            class="current bt-icon" {% else %} class='bt-icon' {% endif %}><a href="index">Home</a></li>
+         <li {% if name == "combos" %}
+             class="current bt-icon" {% else %} class='bt-icon' {% endif %}><a href="combo">Combos</a></li>
+         <li class='bt-icon' ><a href="index-2.html">   </a></li>
+         <li {% if name == "play" %}
+              class='current bt-icon' {% else %} class='bt-icon' {% endif %} ><a href="play">Play</a></li>
+         <li {% if name == "DIY" %}
+             class="current bt-icon" {% else %} class='bt-icon' {% endif %} ><a href="diy">DIY</a></li>
+         <li {% if name == "contact" %}
+             class="current bt-icon" {% else %} class='bt-icon' {% endif %} ><a href="contact">Contact</a></li>
+        </ul>
+    </nav>
+  </div>
+
+</header>
+  {% block content %}
+  {% endblock %}
+</div>
+
+
+<!--==============================footer=================================-->
+
+  <footer>
+    <div id="foot_img">
+      <img src="../static/imgs/foot.png">
+    </div>
+    <div class="footer_content">
+    <div class="container_12">
+      <div class="grid_12">
+
+        <div class="social-icons">
+           <div class="social-icon social-email"><a href="mailto:hallo@example.com" target="_blank" data-original-title="Email">Email</a></div>
+           <div class="social-icon social-github"><a href="#" target="_blank" data-original-title="Github">Github</a></div>
+           <div class="social-icon social-html5"><a href="#" target="_blank" data-original-title="Html5">Html5</a></div>
+           <div class="social-icon social-facebook"><a href="#" target="_blank" data-original-title="Facebook">Facebook</a></div>
+           <div class="social-icon social-flickr"><a href="#" target="_blank" data-original-title="Flickr">Flickr</a></div>
+           <div class="social-icon social-googleplus"><a href="#" target="_blank" data-original-title="googleplus">googleplus</a></div>
+        </div>
+
+        <div class="copy">
+          &copy; 2015 |  Website Designed by Y.Y.Y
+        </div>
+      </div>
+      </div>
+    </div>
+
+
+  </footer>
+
+
+  <script>
+  $(document).ready(function(){
+    $(".bt-menu-trigger").toggle(
+      function(){
+        $('.bt-menu').addClass('bt-menu-open');
+      },
+      function(){
+        $('.bt-menu').removeClass('bt-menu-open');
+      }
+    );
+  })
+  </script>
+
+  <script>
+     $(document).ready(function(){
+
+       $().UItoTop({ easingType: 'easeOutQuart' });
+     })
+  </script>
+
+  {% block scripts %}
+
+  {% endblock %}
+
+</body>
+</html>

@@ -1,0 +1,176 @@
+{% extends "layout.html" %}
+
+{% block stylesheet %}
+<link id="snipcart-theme" type="text/css"
+    href="https://cdn.snipcart.com/themes/base/snipcart.min.css"
+    rel="stylesheet">
+<style>
+#snipcart-discounts {
+display: none !important;
+}
+</style>
+
+
+{% endblock %}
+
+{% block javascript %}
+<script type="text/javascript"
+    id="snipcart"
+    src="https://cdn.snipcart.com/scripts/snipcart.js"
+    data-api-key="NTBjMjgyNGEtYTBlYi00MGJlLWE2MjgtNTA1YjdjMTM1YjYw"></script>
+{% endblock %}
+
+{% block content %}
+<!--==============================Content=================================-->
+
+<div class="content">
+  <div class="container">
+    <div class="col-xs-4">
+      <div class="box maxheight">
+        <img class="checkbox" src="../static/imgs/front_page1.png" alt="">
+        <div class="title2">1.Grass Burger Combo</div>
+        <div class="title2">$19.99</div>      <br>
+        <a href="#">More Info</a>
+      </div>
+      <input type="radio" name="combo" class="combo-radio" item-name="Grass Burger Combo" item-price="19.99">
+      <a href="#"
+        class="snipcart-add-item"
+        data-item-id="1"
+        data-item-name="Grass Burger Combo"
+        data-item-price="19.99"
+        data-item-quantity="1"
+        data-item-url="http://localhost:5000/pay"
+        data-item-description="....placeholder...">
+            Buy
+      </a>
+    </div>
+    <div class="col-xs-4">
+      <div class="box maxheight">
+        <img class="checkbox" src="../static/imgs/front_page3.png" alt="">
+        <div class="title2">2.Roasted Duck Combo</div>
+        <div class="title2">$25.99</div>
+        <br>
+        <a href="#">More Info</a>
+      </div>
+      <input type="radio" name="combo" class="combo-radio" item-name="Roasted Duck Combo" item-price="25.99">
+      <a href="#"
+        class="snipcart-add-item"
+        data-item-id="2"
+        data-item-name="Roasted Duck Combo"
+        data-item-price="25.99"
+        data-item-quantity="1"
+        data-item-url="http://localhost:5000/pay"
+        data-item-description="....placeholder...">
+            Buy
+      </a>
+    </div>
+    <div class="col-xs-4">
+      <div class="box maxheight">
+        <img class="checkbox" src="../static/imgs/front_page2.png" alt="">
+        <div class="title2">3.Walnut Pizza Combo</div>
+        <div class="title2">$15.99</div>
+        <br>
+        <a href="#">More Info</a>
+      </div>
+      <input type="radio" name="combo" class="combo-radio" item-name="Walnut Pizza Combo" item-price="15.99">
+      <a href="#"
+        class="snipcart-add-item"
+        data-item-id="3"
+        data-item-name="Walnut Pizza Combo"
+        data-item-price="15.99"
+        data-item-quantity="1"
+        data-item-url="http://localhost:5000/pay"
+        data-item-description="....placeholder...">
+            Buy
+      </a>
+    </div>
+  </div>
+
+  <form action="{{ url_for('pay', id="123") }}" method="post">
+    <input type="hidden" name="combo-name" id="combo-name" value="">
+    <input type="hidden" name="combo-price" id="combo-price" value="">
+    <button><img src="//www.paypalobjects.com/en_US/i/btn/btn_xpressCheckout.gif" alt="Check out with PayPal" /></button>
+  </form>
+
+</div>
+<!--==============================放大镜效果code=================================-->
+
+<script>
+$(function(){
+      $('.checkbox').okzoom({
+        width: 200,
+        height: 200,
+        border: "2px solid black",
+        shadow: "0 0 10px #000"
+      });
+    });
+</script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<!--==============================放大镜效果code=================================-->
+
+<script>
+  $(document).ready(function() {
+    // Snipcart.execute('config', 'show_cart_automatically', false);
+    // Snipcart.execute('bind', 'cart.closed', function() {
+    //   Snipcart.execute('item.destroy', {
+    //       url: "{{ url_for('pay') }}"
+    //   });
+    // });
+    //
+    // Snipcart.execute('bind', 'item.added', function() {
+    //   Snipcart.api.showCart();
+    // });
+    Snipcart.execute('config', 'show_continue_shopping', true);
+    $('.combo-radio').change(function() {
+      if($(this).prop("checked")) {
+        $("#combo-name").val($(this).attr("item-name"));
+        $("#combo-price").val($(this).attr("item-price"));
+      }
+    });
+    // $('.combo-radio').each(function() {
+    //
+    //   });
+    // $('#add-cart').click(function() {
+    //   $('.combo-radio').each(function() {
+    //     if($(this).prop("checked")) {
+    //       $("#add-cart").attr("data-item-id", $(this).attr("data-item-id"));
+    //       $("#add-cart").attr("data-item-name", $(this).attr("data-item-name"));
+    //       $("#add-cart").attr("data-item-price", $(this).attr("data-item-price"));
+    //       $("#add-cart").attr("data-item-quantity", $(this).attr("data-item-quantity"));
+    //       $("#add-cart").attr("data-item-description", $(this).attr("data-item-description"));
+    //     }
+    //   });
+    //
+    //   if($(this).attr("data-item-id") != undefined) {
+    //     Snipcart.execute('item.add', {
+    //       // Required properties
+    //       id: $(this).attr("data-item-id"),
+    //       name: $(this).attr("data-item-name"),
+    //       url: "127.0.0.1:5000/pay",
+    //       price: $(this).attr("data-item-price"),
+    //       quantity: 1,
+    //       // Optional properties
+    //       description: 'excellent choice',
+    //     });
+    //
+    //   }
+    // })
+
+  });
+</script>
+
+<!--==============================footer=================================-->
+{% endblock %}

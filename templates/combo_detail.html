@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <title>Combo</title>
+     <meta charset="utf-8">
+     <link rel="icon" href="../static/imgs/favicon.ico">
+     <link rel="stylesheet" href="../static/css/touchTouch.css">
+     <link rel="stylesheet" href="../static/css/style.css">
+     <link rel="stylesheet" href="../static/css/style_cy.css">
+     <link rel="stylesheet" href="../static/css/style_DIYpage.css">
+
+     <script src="../static/js/jquery.js"></script>
+     <script src="../static/js/jquery-migrate-1.1.1.js"></script>
+     <script src="../static/js/jquery.equalheights.js"></script>
+     <script src="../static/js/jquery.ui.totop.js"></script>
+     <script src="../static/js/jquery.tabs.min.js"></script>
+     <script src="../static/js/touchTouch.jquery.js"></script>
+     <script src="../static/js/jquery.easing.1.3.js"></script>
+     <script>
+        $(document).ready(function(){
+          $().UItoTop({ easingType: 'easeOutQuart' });
+         $('.gallery a.gal').touchTouch();
+       })
+     </script>
+</head>
+
+<body class="page2">
+
+<header>
+
+  <div class="background-wrap">
+<div id="videoOverlay" style="position:absolute;  top: 0; left: 0;  width:100%;background-color:rgba(0,170,100, 0.1); z-index:1;"></div>
+      <video id="videoFrame" style="position:absolute; width:100% !important; height:auto !important;" id="video-bg-elem" preload="auto" autoplay="true" loop="loop" muted="muted">
+        <source src="../static/imgs/combo_bg.mp4" type="video/mp4">
+          NOT SUPPORT
+      </video>
+
+  </div>
+  <div class="content">
+    <h1>KitChan Food</h1>
+    <p>Choose your own food package!</p>
+  </div>
+  <div class="menu_block">
+    <nav id="bt-menu" class="bt-menu">
+        <a href="#" class="bt-menu-trigger"><span>Menu</span></a>
+        <ul>
+          <li class="bt-icon "><a href="index">Home</a></li>
+         <li class="current bt-icon"><a href="combo">Combos</a></li>
+         <li class="bt-icon"><a href="#">   </a></li>
+         <li class="bt-icon"><a href="play">Play</a></li>
+         <li class="bt-icon"><a href="diy">DIY</a></li>
+         <li class="bt-icon"><a href="contact">Contact</a></li>
+        </ul>
+    </nav>
+  </div>
+  <div class="intro">
+    
+
+  </div>
+
+</header>
+
+<!--==============================Content=================================-->
+
+<div class="content"><div class="ic"></div>
+  <div class="container_12">
+    <div class="grid_12">
+      <h3 class="head2">Our Featured Combos</h3>
+    </div>
+
+    <div class="tabs tb gallery">
+             <div class="div-nav  ">
+             <div class="grid_12">
+                 <ul class="nav">
+                    <li class="selected"><a href="#tab-1" class="">1.Grass Burger Combo - $19.99</a></li>
+                    <li><a href="#tab-2">2.Roasted Duck Combo - $25.99</a></li>
+                    <li><a href="#tab-3">3.Walnut Pizza Combo - $15.99</a></li>
+
+                 </ul>
+             </div>
+             </div>
+             <div class="div-tabs">
+              <div  id="tab-1" class="tab-content gallery1">
+                  <div class="grid_3">
+                    <a href="../static/imgs/combo_1_1.jpg" class="gal"><img src="../static/imgs/combo_s1_1.jpg" alt=""><span></span></a>
+                    <div class="col2"><span class="col3"><a href="#">Burger Buns * 3</a></span></div>
+                  </div>
+                  <div class="grid_3">
+                    <a href="../static/imgs/combo_1_2.jpg" class="gal"><img src="../static/imgs/combo_s1_2.jpg" alt=""><span></span></a>
+                    <div class="col2"><span class="col3"><a href="#">Herb Spice * 1</a></span></div>
+                  </div>
+                  <div class="grid_3">
+                    <a href="../static/imgs/combo_1_3.jpg" class="gal"><img src="../static/imgs/combo_s1_3.jpg" alt=""><span></span></a>
+                    <div class="col2"><span class="col3"><a href="#">Vegetable * 3</a></span></div>
+                  </div>
+                  <div class="grid_3">
+                    <a href="../static/imgs/combo_1_4.jpg" class="gal"><img src="../static/imgs/combo_s1_4.jpg" alt=""><span></span></a>
+                    <div class="col2"><span class="col3"><a href="#">Sirloin Steak * 1 pound</a></span></div>
+                  </div>
+              </div>
+              <div  id="tab-2" class="tab-content gallery2">
+                <div class="grid_3">
+                  <a href="../static/imgs/combo_2_1.jpg" class="gal"><img src="../static/imgs/combo_s2_1.jpg" alt=""><span></span></a>
+                  <div class="col2"><span class="col3"><a href="#">Roasted Duck * 1</a></span></div>
+                </div>
+                <div class="grid_3">
+                  <a href="../static/imgs/combo_2_2.jpg" class="gal"><img src="../static/imgs/combo_s2_2.jpg" alt=""><span></span></a>
+                  <div class="col2"><span class="col3"><a href="#">Homemade Muffin * 5</a></span></div>
+                </div>
+                <div class="grid_3">
+                  <a href="../static/imgs/combo_2_3.jpg" class="gal"><img src="../static/imgs/combo_s2_3.jpg" alt=""><span></span></a>
+                  <div class="col2"><span class="col3"><a href="#">House Salad * 3</a></span></div>
+                </div>
+                <div class="grid_3">
+                  <a href="../static/imgs/combo_2_4.jpg" class="gal"><img src="../static/imgs/combo_s2_4.jpg" alt=""><span></span></a>
+                  <div class="col2"><span class="col3"><a href="#">Crème Mashed Potatoes * 3</a></span></div>
+                </div>
+              </div>
+              <div  id="tab-3" class="tab-content gallery3">
+                <div class="grid_3">
+                  <a href="../static/imgs/combo_3_1.jpg" class="gal"><img src="../static/imgs/combo_s3_1.jpg" alt=""><span></span></a>
+                  <div class="col2"><span class="col3"><a href="#">Pizza Crust * 1</a></span></div>
+                </div>
+                <div class="grid_3">
+                  <a href="../static/imgs/combo_3_2.jpg" class="gal"><img src="../static/imgs/combo_s3_2.jpg" alt=""><span></span></a>
+                  <div class="col2"><span class="col3"><a href="#">Walnut * 0.5 pound</a></span></div>
+                </div>
+                <div class="grid_3">
+                  <a href="../static/imgs/combo_3_3.jpg" class="gal"><img src="../static/imgs/combo_s3_3.jpg" alt=""><span></span></a>
+                  <div class="col2"><span class="col3"><a href="#">Mt Tam Cheese * 1</a></span></div>
+                </div>
+                <div class="grid_3">
+                  <a href="../static/imgs/combo_3_4.jpg" class="gal"><img src="../static/imgs/combo_s3_4.jpg" alt=""><span></span></a>
+                  <div class="col2"><span class="col3"><a href="#">Seasonal Toppings * 0.5 pound</a></span></div>
+                </div>
+
+
+
+             </div>
+        </div>
+  </div>
+</div>
+<a href="pay" class="reserv">Buy our featured combos!</a>
+
+<!--==============================footer=================================-->
+
+<footer>
+  <div id="foot_img">
+    <img src="../static/imgs/foot.png">
+  </div>
+  <div class="footer_content">
+  <div class="container_12">
+    <div class="grid_12">
+
+      <div class="social-icons">
+         <div class="social-icon social-email"><a href="mailto:hallo@example.com" target="_blank" data-original-title="Email">Email</a></div>
+         <div class="social-icon social-github"><a href="#" target="_blank" data-original-title="Github">Github</a></div>
+         <div class="social-icon social-html5"><a href="#" target="_blank" data-original-title="Html5">Html5</a></div>
+         <div class="social-icon social-facebook"><a href="#" target="_blank" data-original-title="Facebook">Facebook</a></div>
+         <div class="social-icon social-flickr"><a href="#" target="_blank" data-original-title="Flickr">Flickr</a></div>
+         <div class="social-icon social-googleplus"><a href="#" target="_blank" data-original-title="googleplus">googleplus</a></div>
+      </div>
+
+      <div class="copy">
+        &copy; 2015 |  Website Designed by Y.Y.Y
+      </div>
+    </div>
+    </div>
+  </div>
+
+
+</footer>
+
+<div id="foot_img">
+  <img src="../static/imgs/foot.png">
+</div>
+
+<script>
+      $(document).ready(function(){
+         $(".bt-menu-trigger").toggle(
+          function(){
+            $('.bt-menu').addClass('bt-menu-open');
+          },
+          function(){
+            $('.bt-menu').removeClass('bt-menu-open');
+          }
+        );
+      })
+</script>
+
+<script>
+   $(document).ready(function(){
+
+     $( ".block1" ).mouseover(function() {
+       $(this).addClass( "blur" );
+     });
+     $( ".block1" ).mouseout(function() {
+       $(this).removeClass( "blur" );
+     });
+     //$().UItoTop({ easingType: 'easeOutQuart' });
+   });
+
+   $(window).load(function() {
+     var hgt = $("#videoFrame").height()+"px";
+   $("#videoOverlay").css("height",hgt);
+});
+
+$(window ).resize(function() {
+  var hgt = $("#videoFrame").height()+"px";
+$("#videoOverlay").css("height",hgt);
+});
+
+</script>
+
+</body>
+</html>
